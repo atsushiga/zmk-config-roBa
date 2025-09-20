@@ -115,8 +115,8 @@
             label = "MAC_CONNECT";
             #binding-cells = <0>;
             bindings = <
-                &out OUT_BLE
-                &bt BT_SEL 0        // slot0 = Mac
+                // &out OUT_BLE
+                &bt BT_SEL 2        // slot0 = Mac
                 &wait-ms 300        // 任意（なくても可）
                 &to 7
             >;
@@ -127,8 +127,8 @@
             label = "WIN_CONNECT";
             #binding-cells = <0>;
             bindings = <
-                &out OUT_BLE
-                &bt BT_SEL 1        // slot1 = Windows
+                // &out OUT_BLE
+                &bt BT_SEL 0        // slot1 = Windows
                 &wait-ms 300
                 &to 0
             >;
