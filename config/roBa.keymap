@@ -117,10 +117,10 @@
             compatible = "zmk,behavior-macro";
             label = "MAC_CONNECT";
             #binding-cells = <0>;
+            &wait-ms <300>;
             bindings = <
-                // &out OUT_BLE
+                /* &out OUT_BLE */
                 &bt BT_SEL 2        // slot0 = Mac
-                &wait-ms 300        // 任意（なくても可）
                 &to 7
             >;
         };
@@ -129,10 +129,10 @@
             compatible = "zmk,behavior-macro";
             label = "WIN_CONNECT";
             #binding-cells = <0>;
+            &wait-ms <300>;
             bindings = <
                 // &out OUT_BLE
                 &bt BT_SEL 0        // slot1 = Windows
-                &wait-ms 300
                 &to 0
             >;
         };
