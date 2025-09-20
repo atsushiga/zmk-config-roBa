@@ -118,7 +118,7 @@
                 &out OUT_BLE
                 &bt BT_SEL 0        // slot0 = Mac
                 &wait-ms 300        // 任意（なくても可）
-                &default mac_default
+                &to 7
             >;
         };
 
@@ -130,7 +130,7 @@
                 &out OUT_BLE
                 &bt BT_SEL 1        // slot1 = Windows
                 &wait-ms 300
-                &default win_default
+                &to 0
             >;
         };
     };
