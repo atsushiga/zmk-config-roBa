@@ -197,6 +197,8 @@
 &kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans      &trans        &kp HOME        &trans        &kp END        &trans
 &trans          &trans                  &trans          &trans                   &trans   &trans      &trans      &trans                                                     &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
         };
 
         SCROLL {
