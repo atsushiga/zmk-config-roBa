@@ -93,9 +93,8 @@
 
             // 反時計回り / 時計回り の順。好みで上下を入れ替え可。
 
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-
-            tap-ms = <20>; // 20ms間隔で“コロコロ”送る。速すぎる/遅すぎるなら調整
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;  /* ↑↓を逆にして試す */
+            tap-ms = <30>;  /* 20→30に伸ばしてみる（環境によっては間引きされることがある） */
         };
 
         mac_conn: mac_conn {
