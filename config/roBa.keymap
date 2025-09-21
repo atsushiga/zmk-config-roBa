@@ -120,7 +120,7 @@
 
         win_default {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                   &kp T                                                   &kp Y        &kp U  &lt 9 I    &kp O    &kp P
+&kp Q             &kp W         &kp E         &kp R                   &kp T                                                   &kp Y        &kp U  &lt 8 I    &kp O    &kp P
 &kp A             &kp S         &kp D         &kp F                   &kp G        &kp LS(LG(S))               &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                   &kp B        &kp COLON                   &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 1 LANG1  &lt 2 SPACE  &lt_to_layer_0 3 LANG2      &kp BACKSPACE  &lt 3 ENTER                             &kp DEL
@@ -158,23 +158,25 @@
 
         mac_default {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                   &kp T                                                   &kp Y        &kp U  &lt 9 I    &kp O    &kp P
+&kp Q             &kp W         &kp E         &kp R                   &kp T                                                   &kp Y        &kp U  &lt 8 I    &kp O    &kp P
 &kp A             &kp S         &kp D         &kp F                   &kp G        &kp LG(LS(NUMBER_4))        &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                   &kp B        &kp COLON                   &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 5 LANG1  &lt 6 SPACE  &lt_to_layer_0 7 LANG2      &kp BACKSPACE  &lt 7 ENTER                             &kp DEL
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 5 LANG1  &lt 6 SPACE  &lt_to_layer_0 6 LANG2      &kp BACKSPACE  &lt 7 ENTER                             &kp DEL
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&scroll_up_down>;
             label = "mac";
         };
 
         mac_function {
             bindings = <
-&kp F1   &kp F2   &kp F3  &kp F4  &kp F5                       &win_conn  &bt BT_SEL 1  &mac_conn  &bt BT_SEL 3  &bt BT_SEL 4
-&kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &trans      &trans  &trans     &trans        &trans     &trans        &trans
-&kp F11  &kp F12  &trans  &trans  &trans   &trans      &trans  &trans     &trans        &trans     &trans        &bt BT_CLR
-&trans   &trans   &trans  &trans  &trans   &trans      &trans  &trans                                            &bt BT_CLR_ALL
+&kp F1   &kp F2   &kp F3  &kp F4             &kp F5                                    &win_conn  &bt BT_SEL 1  &mac_conn  &bt BT_SEL 3  &bt BT_SEL 4
+&kp F6   &kp F7   &kp F8  &kp F9             &kp F10               &trans      &trans  &trans     &trans        &trans     &trans        &trans
+&kp F11  &kp F12  &trans  &kp LC(C_BRI_DEC)  &kp C_BRIGHTNESS_INC  &trans      &trans  &trans     &trans        &trans     &trans        &bt BT_CLR
+&trans   &trans   &trans  &trans             &trans                &trans      &trans  &trans                                            &bt BT_CLR_ALL
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         mac_num {
@@ -184,6 +186,8 @@
 &mt LEFT_SHIFT NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
 &trans                   &trans        &trans        &trans        &trans        &trans                       &trans          &trans                                                                     &kp PIPE
             >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
 
         mac_arrow {
@@ -206,10 +210,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                      &trans    &trans    &trans    &trans    &kp LC(UP_ARROW)
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &mkp MB4  &mkp MB1  &mkp MB3  &mkp MB2  &kp LC(DOWN_ARROW)
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &mkp MB5  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                  &trans
             >;
         };
     };
