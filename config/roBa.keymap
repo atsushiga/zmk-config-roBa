@@ -159,7 +159,7 @@
         mac_default {
             bindings = <
 &kp Q             &kp W         &kp E         &kp R                   &kp T                                                   &kp Y        &kp U  &lt 8 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                   &kp G        &kp LG(LS(NUMBER_4))        &msc SCRL_UP   &kp H        &kp J  &kp K      &kp L    &kp SQT
+&kp A             &kp S         &kp D         &kp F                   &kp G        &kp LG(LS(NUMBER_4))        &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                   &kp B        &kp COLON                   &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 5 LANG1  &lt 6 SPACE  &lt_to_layer_0 6 LANG2      &kp BACKSPACE  &lt 7 ENTER                             &kp DEL
             >;
@@ -186,8 +186,6 @@
 &mt LEFT_SHIFT NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
 &trans                   &trans        &trans        &trans        &trans        &trans                       &trans          &trans                                                                     &kp PIPE
             >;
-
-            sensor-bindings = <&scroll_up_down>;
         };
 
         mac_arrow {
@@ -198,7 +196,7 @@
 &trans          &trans                  &trans          &trans                   &trans   &trans      &trans      &trans                                                     &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         SCROLL {
@@ -208,6 +206,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
 
         MOUSE {
@@ -217,6 +217,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &mkp MB5  &trans    &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                  &trans
             >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
     };
 };
