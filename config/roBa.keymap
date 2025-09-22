@@ -88,8 +88,7 @@
 
             // 反時計回り / 時計回り の順。好みで上下を入れ替え可。
 
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-  /* ↑↓を逆にして試す */
+            bindings = <&msc SCRL_UP 8>, <&msc SCRL_DOWN 8>;
             tap-ms = <30>;  /* 20→30に伸ばしてみる（環境によっては間引きされることがある） */
         };
 
