@@ -70,9 +70,9 @@ layers:
   - F11
   - F12
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - MUTE
+  - BRIGHTNESS DEC
+  - BRIGHTNESS INC
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -104,7 +104,7 @@ layers:
   - '5'
   - '6'
   - '*'
-  - Ctl+Alt+KP 0
+  - +
   - _
   - '!'
   - '@'
@@ -212,8 +212,8 @@ layers:
   - .
   - /
   - LCTRL
-  - LEFT WIN
   - LEFT ALT
+  - LEFT COMMAND
   - {t: '&to_layer_0 LANG1', h: mac_function}
   - {t: SPACE, h: mac_num}
   - {t: '&to_layer_0 LANG2', h: mac_num}
@@ -246,9 +246,9 @@ layers:
   - F11
   - F12
   - {t: ▽, type: trans}
-  - VOL DN
-  - VOLUME UP
-  - VOLUME UP
+  - MUTE
+  - BRIGHTNESS DEC
+  - BRIGHTNESS INC
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -280,7 +280,7 @@ layers:
   - '5'
   - '6'
   - '*'
-  - Ctl+Alt+KP 0
+  - +
   - _
   - '!'
   - '@'
@@ -449,7 +449,5 @@ combos:
   k: '"'
 - p: [24, 25]
   k: '='
-- p: [25, 26]
-  k: Sft+CAPSLOCK
 - p: [0, 1]
   k: ESCAPE
