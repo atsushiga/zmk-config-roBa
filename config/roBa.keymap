@@ -82,32 +82,12 @@
             tapping-term-ms = <200>;
         };
     
-         scroll_up_strong: scroll_up_strong {
-          compatible = "zmk,behavior-macro";
-          #binding-cells = <0>;
-          bindings = <
-            &msc SCRL_UP
-            &msc SCRL_UP
-            &msc SCRL_UP     /* 回数を増やす */
-          >;
-        };
-    
-        scroll_down_strong: scroll_down_strong {
-          compatible = "zmk,behavior-macro";
-          #binding-cells = <0>;
-          bindings = <
-            &msc SCRL_DOWN
-            &msc SCRL_DOWN
-            &msc SCRL_DOWN
-          >;
-        };
-    
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
-          compatible = "zmk,behavior-sensor-rotate";
-          #sensor-binding-cells = <0>;
-          /* 反時計回り, 時計回り */
-          bindings = <&scroll_down_strong>, <&scroll_up_strong>;
-          tap-ms = <30>;   /* 20→30など、必要に応じて調整 */
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            /* CCW, CW */
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+            tap-ms = <30>;   /* 20→30 に一旦上げる（間引き/相殺対策） */
         };
 
         mac_conn: mac_conn {
