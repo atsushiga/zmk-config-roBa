@@ -13,4 +13,9 @@
 
 &left_encoder {
     status = "okay";
+
+    steps-per-period = <4>;   /* 2 / 4 / 8 あたりで試す（最初は 4 推奨） */
+    resolution = <1>;         /* 1周期あたりのイベント数＝1 */
+
+
 };
