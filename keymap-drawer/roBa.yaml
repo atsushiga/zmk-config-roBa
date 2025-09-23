@@ -138,16 +138,16 @@ layers:
   - UP ARROW
   - Ctl+TAB
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+Gui+LEFT
   - PG UP
   - UP ARROW
   - PAGE DOWN
+  - Ctl+Gui+RIGHT
   - {t: ▽, type: trans}
-  - HOME
   - LEFT ARROW
   - DOWN ARROW
   - RIGHT ARROW
-  - END
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ESCAPE
   - Ctl+LEFT
@@ -156,9 +156,9 @@ layers:
   - RIGHT
   - Ctl+RIGHT
   - LEFT SHIFT
-  - Gui+Sft+LEFT ARROW
   - {t: ▽, type: trans}
-  - Gui+Sft+RIGHT ARROW
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -166,7 +166,7 @@ layers:
   - HOME
   - {t: ▽, type: trans}
   - END
-  - {t: ▽, type: trans}
+  - Gui+TAB
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -246,9 +246,9 @@ layers:
   - F11
   - F12
   - {t: ▽, type: trans}
-  - Ctl+BRI DEC
-  - BRIGHTNESS INC
-  - {t: ▽, type: trans}
+  - VOL DN
+  - VOLUME UP
+  - VOLUME UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -314,27 +314,27 @@ layers:
   - UP ARROW
   - Ctl+TAB
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+LEFT
   - PG UP
   - UP ARROW
   - PAGE DOWN
+  - Ctl+RIGHT
   - {t: ▽, type: trans}
-  - HOME
   - LEFT ARROW
   - DOWN ARROW
   - RIGHT ARROW
-  - END
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ESCAPE
-  - Ctl+LEFT
+  - Alt+LEFT
   - LEFT ARROW
   - DOWN
   - RIGHT
-  - Ctl+RIGHT
+  - Alt+RIGHT
   - LEFT SHIFT
-  - Gui+Sft+LEFT ARROW
   - {t: ▽, type: trans}
-  - Gui+Sft+RIGHT ARROW
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -342,7 +342,7 @@ layers:
   - HOME
   - {t: ▽, type: trans}
   - END
-  - {t: ▽, type: trans}
+  - Ctl+UP ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -351,7 +351,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
+  - Ctl+DOWN ARROW
   SCROLL:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -406,7 +406,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Ctl+UP ARROW
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -418,7 +418,7 @@ layers:
   - '&mkp MB1'
   - '&mkp MB3'
   - '&mkp MB2'
-  - Ctl+DOWN ARROW
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -445,8 +445,6 @@ combos:
   k: TAB
 - p: [10, 11]
   k: Sft+TAB
-- p: [11, 10]
-  k: '&to_layer_0 INT_MUHENKAN'
 - p: [20, 21]
   k: '"'
 - p: [24, 25]
