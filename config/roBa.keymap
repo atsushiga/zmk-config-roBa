@@ -90,7 +90,9 @@
             label = "MAC_CONNECT";
             #binding-cells = <0>;
             wait-ms = <300>;
-            bindings = <&bt BT_SEL 2 &to 4>;
+
+
+            bindings = <&bt BT_SEL 2 &sl 4>;
         };
 
         win_conn: win_conn {
@@ -98,7 +100,7 @@
             label = "WIN_CONNECT";
             #binding-cells = <0>;
             wait-ms = <300>;
-            bindings = <&bt BT_SEL 0 &to 0>;
+            bindings = <&bt BT_SEL 0 &sl 0>;
         };
     };
 
