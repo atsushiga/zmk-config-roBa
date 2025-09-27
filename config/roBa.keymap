@@ -12,7 +12,6 @@
 };
 
 &trackball {
-
     // arrows {
     //     layers = <3>;
     //     bindings =
@@ -139,10 +138,10 @@
 
         WIN_ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &trans                          &kp LC(LG(LEFT))  &kp PG_UP       &kp UP_ARROW  &kp PAGE_DOWN  &kp LC(LG(RIGHT))
-&trans          &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans      &kp ESCAPE  &kp LC(LEFT)      &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp LC(RIGHT)
-&kp LEFT_SHIFT  &trans           &trans          &trans           &trans  &trans      &trans      &trans            &kp HOME        &trans        &kp END        &kp LG(TAB)
-&trans          &trans           &trans          &trans           &trans  &trans      &trans      &trans                                                         &trans
+&kp ESCAPE      &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &trans                            &kp LC(LG(LEFT))  &kp PG_UP       &kp UP_ARROW  &kp PAGE_DOWN  &kp LC(LG(RIGHT))
+&trans          &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans      &kp ESCAPE    &kp LC(LEFT)      &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp LC(RIGHT)
+&kp LEFT_SHIFT  &trans           &trans          &trans           &trans  &trans      &kp LC(HOME)  &kp LC(END)       &kp HOME        &trans        &kp END        &kp LG(TAB)
+&trans          &trans           &trans          &trans           &trans  &trans      &trans        &trans                                                         &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -182,10 +181,10 @@
 
         mac_arrow {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &trans                          &kp LC(LEFT)  &kp PG_UP       &kp UP_ARROW  &kp PAGE_DOWN  &kp LC(RIGHT)
-&trans          &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans      &kp ESCAPE  &kp LA(LEFT)  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp LA(RIGHT)
-&kp LEFT_SHIFT  &trans           &trans          &trans           &trans  &trans      &trans      &trans        &kp HOME        &trans        &kp END        &kp LC(UP_ARROW)
-&trans          &trans           &trans          &trans           &trans  &trans      &trans      &trans                                                     &kp LC(DOWN_ARROW)
+&kp ESCAPE      &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &trans                          &kp LC(LEFT)  &kp PG_UP           &kp UP_ARROW  &kp PAGE_DOWN  &kp LC(RIGHT)
+&trans          &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans      &kp ESCAPE  &kp LA(LEFT)  &kp LEFT_ARROW      &kp DOWN      &kp RIGHT      &kp LA(RIGHT)
+&kp LEFT_SHIFT  &trans           &trans          &trans           &trans  &trans      &kp HOME    &kp END       &kp LG(LEFT_ARROW)  &trans        &kp LG(RIGHT)  &kp LC(UP_ARROW)
+&trans          &trans           &trans          &trans           &trans  &trans      &trans      &trans                                                         &kp LC(DOWN_ARROW)
             >;
 
             sensor-bindings = <&scroll_up_down>;
