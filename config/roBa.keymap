@@ -86,11 +86,13 @@
         };
 
         /* エンコーダ回転 → 横スクロール（CCW, CW の順） */
+
         scroll_horiz: scroll_horiz {
-          compatible = "zmk,behavior-sensor-rotate";
-          #sensor-binding-cells = <0>;
-          bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
-          tap-ms = <30>;   /* 好みで 20〜40 に調整 */
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
+
+            tap-ms = <30>;   /* 好みで 20〜40 に調整 */
         };
 
         mac_conn: mac_conn {
@@ -153,7 +155,7 @@
 &trans          &trans           &trans          &trans           &trans             &trans      &trans      &trans                                                         &kp LC(DOWN_ARROW)
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&scroll_horiz>;
         };
 
         win_default {
@@ -169,7 +171,7 @@
 
         WIN_FUNCTION {
             bindings = <
-&kp F1   &kp F2   &kp F3  &kp F4      &kp F5                                                  &win_conn  &bt BT_SEL 1  &mac_conn  &bt BT_SEL 3  &bt BT_SEL 4
+&kp F1   &kp F2   &kp F3  &kp F4      &kp F5                                                  &mac_conn  &bt BT_SEL 1  &win_conn  &bt BT_SEL 3  &bt BT_SEL 4
 &kp F6   &kp F7   &kp F8  &kp F9      &kp F10               &trans                    &trans  &trans     &trans        &trans     &trans        &trans
 &kp F11  &kp F12  &trans  &kp K_MUTE  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC      &trans  &trans     &trans        &trans     &trans        &bt BT_CLR
 &trans   &trans   &trans  &trans      &trans                &trans                    &trans  &trans                                            &bt BT_CLR_ALL
@@ -195,7 +197,7 @@
 &trans          &trans            &trans            &trans           &trans              &trans      &trans        &trans                                                         &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&scroll_horiz>;
         };
 
         MOUSE {
