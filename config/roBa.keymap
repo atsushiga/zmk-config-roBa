@@ -69,7 +69,6 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_MAC";
         };
-
     };
 
     behaviors {
@@ -81,6 +80,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
         lt_to_layer_mac: lt_to_layer_mac {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_MAC";
@@ -89,7 +89,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
-
 
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
             compatible = "zmk,behavior-sensor-rotate";
@@ -134,10 +133,10 @@
 
         mac_default {
             bindings = <
-&kp Q             &kp W         &kp E             &kp R                        &kp T                                                        &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D             &kp F                        &kp G        &kp LG(LS(NUMBER_4))             &kp MINUS      &kp H        &kp J  &kp K      &kp L    &lt 8 SQT
-&mt LEFT_SHIFT Z  &kp X         &kp C             &kp V                        &kp B        &kp COLON                        &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_ALT  &kp LEFT_COMMAND  &lt_to_layer_0 1 LANGUAGE_2  &lt 2 SPACE  &lt_to_layer_0 2 LANGUAGE_1      &kp BACKSPACE  &lt 3 ENTER                             &kp DEL
+&kp Q             &kp W         &kp E             &kp R                          &kp T                                                          &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S         &kp D             &kp F                          &kp G        &kp LG(LS(NUMBER_4))               &kp MINUS      &kp H        &kp J  &kp K      &kp L    &lt 8 SQT
+&mt LEFT_SHIFT Z  &kp X         &kp C             &kp V                          &kp B        &kp COLON                          &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL         &kp LEFT_ALT  &kp LEFT_COMMAND  &lt_to_layer_mac 1 LANGUAGE_2  &lt 2 SPACE  &lt_to_layer_mac 2 LANGUAGE_1      &kp BACKSPACE  &lt 3 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -177,10 +176,10 @@
 
         win_default {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                        &kp T                                                        &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                        &kp G        &kp LS(LG(S))                    &kp MINUS      &kp H        &kp J  &kp K      &kp L    &lt 8 SQT
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp COLON                        &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 5 LANGUAGE_2  &lt 6 SPACE  &lt_to_layer_0 7 LANGUAGE_1      &kp BACKSPACE  &lt 7 ENTER                             &kp DEL
+&kp Q             &kp W         &kp E         &kp R                          &kp T                                                          &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F                          &kp G        &kp LS(LG(S))                      &kp MINUS      &kp H        &kp J  &kp K      &kp L    &lt 8 SQT
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                          &kp B        &kp COLON                          &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_win 5 LANGUAGE_2  &lt 6 SPACE  &lt_to_layer_win 6 LANGUAGE_1      &kp BACKSPACE  &lt 7 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&scroll_up_down>;
