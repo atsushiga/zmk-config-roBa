@@ -1,4 +1,4 @@
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 100
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
 #include <dt-bindings/zmk/mouse.h>     // SCRL_UP/DOWN など &msc 用（使うなら）
 #include <behaviors.dtsi>
@@ -83,6 +83,14 @@
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
             tap-ms = <30>;   /* 20→30 に一旦上げる（間引き/相殺対策） */
+        };
+
+        /* エンコーダ回転 → 横スクロール（CCW, CW の順） */
+        scroll_horiz: scroll_horiz {
+          compatible = "zmk,behavior-sensor-rotate";
+          #sensor-binding-cells = <0>;
+          bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
+          tap-ms = <30>;   /* 好みで 20〜40 に調整 */
         };
 
         mac_conn: mac_conn {
